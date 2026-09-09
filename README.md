@@ -1,10 +1,9 @@
 <p align="center">
   <img width="425" height="259" alt="usernotes running in a terminal" src="https://github.com/user-attachments/assets/794974dc-6e72-4c65-83fd-cac8bb322e0e" />
 </p>
-<div align="center">
   <h1>usernotes</h1>
 
-A terminal task manager with the look and feel of **Claude Code / Codex CLI** — create tasks through a chat-style input box, then switch to keyboard-driven navigation to manage your list, with a live Markdown roadmap kept in sync automatically.
+A terminal task manager with the look and feel of **Claude Code / Codex CLI** - create tasks through a chat-style input box, then switch to keyboard-driven navigation to manage your list, with a live Markdown roadmap kept in sync automatically.
 
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-green)](#-installation)
 [![Built with](https://img.shields.io/badge/built%20with-Python%20%2B%20Textual-3776AB)](https://textual.textualize.io)
@@ -15,14 +14,14 @@ A terminal task manager with the look and feel of **Claude Code / Codex CLI** �
 
 ## ✨ What It Does
 
-- **Chat-style task capture** — type naturally into a single input box; the first entry names the list, everything after becomes a task
-- **Keyboard-driven navigation** — leave typing mode with `↑` / `↓` and manage the whole list without touching a mouse
-- **Five-stage status tracking** — Pending, In Progress, Done, Deferred, Cancelled, one keypress away
-- **Up Next spotlight** — pin a single task above the rest, both on screen and in the exported roadmap, while it stays in its normal group too
-- **Groups turn a list into a roadmap** — organize tasks under named sections that keep their creation order
-- **Live Markdown roadmap export** — every change (status, order, groups, Up Next) is mirrored automatically to a `.md` file in the folder usernotes was launched from, ready to commit straight into a repo
-- **Slash command palette** — `/` opens autocomplete for every action, from `/done N` to `/newgroup Name`
-- **10 built-in themes** — Textual Dark, Nord, Gruvbox, Dracula, Tokyo Night, Monokai, Catppuccin Mocha/Latte, Solarized Dark, Rosé Pine
+- **Chat-style task capture** - type naturally into a single input box; the first entry names the list, everything after becomes a task
+- **Keyboard-driven navigation** - leave typing mode with `↑` / `↓` and manage the whole list without touching a mouse
+- **Five-stage status tracking** - Pending, In Progress, Done, Deferred, Cancelled, one keypress away
+- **Up Next spotlight** - pin a single task above the rest, both on screen and in the exported roadmap, while it stays in its normal group too
+- **Groups turn a list into a roadmap** - organize tasks under named sections that keep their creation order
+- **Live Markdown roadmap export** - every change (status, order, groups, Up Next) is mirrored automatically to a `.md` file in the folder usernotes was launched from, ready to commit straight into a repo
+- **Slash command palette** - `/` opens autocomplete for every action, from `/done N` to `/newgroup Name`
+- **10 built-in themes** - Textual Dark, Nord, Gruvbox, Dracula, Tokyo Night, Monokai, Catppuccin Mocha/Latte, Solarized Dark, Rosé Pine
 
 ---
 
@@ -30,11 +29,11 @@ A terminal task manager with the look and feel of **Claude Code / Codex CLI** �
 
 1. **Launch usernotes** and pick **New Task List** or **Continue Task List** from the main menu (`↑`/`↓` to move, `Enter` to select). Saved lists show their completion progress here and can be deleted right from the keyboard.
 2. **Name your list.** In a new list, the first thing you type and submit becomes the list name.
-3. **Add tasks.** Keep typing and pressing `Enter` — every submission after the name adds a task while you're still in typing mode.
+3. **Add tasks.** Keep typing and pressing `Enter` - every submission after the name adds a task while you're still in typing mode.
 4. **Switch to navigate mode** with `↑` or `↓` once you have tasks to manage.
 5. **Move a task through its lifecycle** with `1`–`5` (Pending → In Progress → Done → Deferred → Cancelled), star it with `u` for Up Next, or edit/delete it with `Enter` / `Backspace`.
 6. **Organize with groups** using `/newgroup Name` and `/group N Name` to turn a flat list into a proper roadmap.
-7. **Check the exported roadmap** — usernotes writes a matching `.md` file to the folder it was launched from, and keeps it updated automatically as you work.
+7. **Check the exported roadmap** - usernotes writes a matching `.md` file to the folder it was launched from, and keeps it updated automatically as you work.
 
 ### Example exported roadmap
 
@@ -107,10 +106,10 @@ Typing `/` opens a command palette with autocomplete.
 
 ## ⚙️ Settings
 
-- **Themes** — 10 built-in options, switchable any time
-- **Delete confirmation** — toggle a safety prompt before deleting tasks or lists
-- **Markdown roadmap export** — toggle automatic `.md` mirroring on or off
-- **Hint bar** — toggle the on-screen key hints
+- **Themes** - 10 built-in options, switchable any time
+- **Delete confirmation** - toggle a safety prompt before deleting tasks or lists
+- **Markdown roadmap export** - toggle automatic `.md` mirroring on or off
+- **Hint bar** - toggle the on-screen key hints
 
 Settings and task lists are saved automatically in:
 
@@ -131,16 +130,16 @@ C:\Users\<you>\.usernotes\
 ## 🐛 Troubleshooting
 
 **`usernotes` isn't recognized after building on Windows**
-Open a *new* terminal window after running `build.bat` — PATH changes don't apply to terminals that were already open.
+Open a *new* terminal window after running `build.bat` - PATH changes don't apply to terminals that were already open.
 
 **Markdown roadmap isn't updating**
-Check that export is enabled in **Settings**, and confirm you're looking in the folder usernotes was actually launched from — that's where the `.md` file is written.
+Check that export is enabled in **Settings**, and confirm you're looking in the folder usernotes was actually launched from - that's where the `.md` file is written.
 
 **`build.bat` fails with a Python version error**
 Confirm Python 3.10.7+ is installed and was added to PATH during setup; re-run the Python installer with "Add to PATH" checked if you skipped it the first time.
 
 **A saved list won't open from Continue Task List**
-Make sure the list file wasn't moved or edited outside usernotes — the app expects its own format in `~/.usernotes/lists/`.
+Make sure the list file wasn't moved or edited outside usernotes - the app expects its own format in `~/.usernotes/lists/`.
 
 ---
 
