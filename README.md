@@ -1,5 +1,7 @@
 # usernotes
 
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/4183c959-16ee-45b5-bd7c-651b3354dd24" />
+
 A terminal task manager with the look and feel of **Claude Code / Codex CLI**.
 
 Create tasks through a chat-style input box, then switch to keyboard-driven navigation to manage your list.
@@ -8,7 +10,7 @@ Create tasks through a chat-style input box, then switch to keyboard-driven navi
 
 The easiest way to install usernotes is with `build.bat`.
 
-1. Install **Python 3.9+** and make sure it's added to PATH.
+1. Install **Python 3.10.7+** and make sure it's added to PATH.
 2. Keep `usernotes.py`, `requirements.txt`, and `build.bat` in the same folder.
 3. Run `build.bat`.
 
